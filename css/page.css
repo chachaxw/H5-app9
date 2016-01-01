@@ -1,0 +1,142 @@
+
+.pager{
+     height: 100%;
+     width:  100%;
+     max-width: 640px;
+     margin: 0 auto;
+     overflow: hidden;
+     color:  #fff;
+     position:relative;
+     font-family: '华文黑体'
+ }
+.swiper-slide{
+    height: 100%;
+    width:  100%;
+    max-width:640px;
+}
+
+/* page1 style */
+.page1 {position: relative; background: #f4b147;}
+.page1 .logo {position: absolute;top: 0.4rem;left: 0;width: 100%;height: 0.66rem; background: url(../images/1_logo.png) no-repeat 0 0 / 100% 100%;}
+.page1 .title {position: absolute;left: 50%;top: 3rem;margin-left: -3.2rem; width: 6.4rem;height: 2.09rem;background: url(../images/1_title.png) no-repeat 0 0 / 100% 100%;}
+.page1 .text {position: absolute;top: 5.5rem; width: 6.4rem;height: 0.31rem;background: url(../images/1_title2.png) no-repeat 0 0 / 100% 100%;}
+.page1 .arrow {position: absolute;bottom: 1.6rem;width: 100%;height: 0.35rem;background: url(../images/1_arrow.png) no-repeat 0 0 / 100% 100%;}
+.page1 .footer {position: absolute;bottom: 0rem;width: 100%;height: 1.06rem;background: url(../images/1_por.png) no-repeat 0 0 / 100% 100%;font-size: 0.22rem;text-align: center;}
+.page1 p{margin-top: 0.4rem}
+.page1 .footer .phone{position: absolute;bottom: 0.2rem;width: 100%;height:  0.57rem; background: url(../images/1_phone.png) no-repeat 0 0 / 100% 100%;}
+
+/* page2 style */
+.page2 {position: relative; background: url(../images/2_bg.png) no-repeat 0 0 / 100% 100%;}
+.title{position: absolute;top: 1.8rem;width: 100%;height: 0.5rem;background: url(../images/2_title.png) no-repeat 0 0 / 100% 100%;}
+.text{position: absolute;top: 2.6rem;width: 100%;height: 0.34rem;background: url(../images/2_text.png) no-repeat 0 0 / 100% 100%;}
+.img{position: absolute;top: 4rem;width: 100%;height: 4.88rem;background: url(../images/2_pic.png) no-repeat 0 0 / 100% 100%;}
+.flower{position: absolute;bottom: 70%;left: 1.5rem;width: 0.51rem;height: 0.22rem;background: url(../images/2_flower.png) no-repeat 0 0 / 100% 100%;z-index: 10}
+.dropFlower{
+	-webkit-animation-name: dropFlower;
+    animation-name: dropFlower;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+@keyframes dropFlower{ 
+    0%{ 
+        bottom:50%;
+		transform: scale(0.4,0.4) rotate(0deg);
+		-webkit-transform: scale(0.4,0.4) rotate(0deg);
+		opacity: 0;
+    } 
+    30%{  
+        transform: rotate(1080deg); 
+		opacity: 1;
+    } 
+    100%{ 
+        bottom: 1.5rem; 
+		left: 4.5rem;
+		transform: scale3d(1,1) rotate(0deg);
+		-webkit-transform: scale3d(1,1) rotate(0deg);
+    } 
+}
+@-webkit-keyframes dropFlower{ 
+    0%{ 
+        bottom:50%;
+		transform: scale3d(0.4,0.4) rotate(0deg);
+		-webkit-transform: scale3d(0.4,0.4) rotate(0deg);
+		opacity: 0;
+    } 
+    30%{ 
+        transform: rotate(1080deg); 
+		opacity: 1;
+    } 
+    100%{ 
+        bottom: 1.5rem; 
+		left: 4.5rem;
+		transform: scale(1,1) rotate(0deg);
+		-webkit-transform: scale(1,1) rotate(0deg);
+    } 
+}
+
+/* page3 style */
+.page3 {position: relative; background: url(../images/3_bg.png) no-repeat 0 0 / 100% 100%;}
+.page3 .title{height: 0.53rem; background: url(../images/3_title.png) no-repeat 0 0 / 100% 100%;}
+.page3 .text{height: 0.84rem; background: url(../images/3_text.png) no-repeat 0 0 / 100% 100%;}
+.page3 .img{background: url(../images/3_pic.png) no-repeat 0 0 / 100% 100%;}
+.page3 .grid{position: absolute;top: 5.5rem;width: 100%;height: 1.74rem;background: url(../images/3_grid.png) no-repeat 0 0 / 100% 100%;z-index: 10}
+
+/* page4 style */
+.page4 {position: relative; background: url(../images/4_bg.png) no-repeat 0 0 / 100% 100%;}
+.page4 .title{height: 0.54rem; background: url(../images/4_title.png) no-repeat 0 0 / 100% 100%;}
+.page4 .text{height: 0.42rem;background: url(../images/4_text.png) no-repeat 0 0 / 100% 100%;}
+.page4 .img{height: 4.65rem;background: url(../images/4_pic.png) no-repeat 0 0 / 100% 100%;}
+.page4 .img1{height: 4.65rem;background: url(../images/4_pic2.png) no-repeat 0 0 / 100% 100%;z-index: 9;}
+.page4 .rect{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: white;z-index: 10;opacity: 0;}
+.flashLight{
+	animation: light;
+	-webkit-animation: light;
+	animation-fill-mode: forwards;
+}
+
+@keyframes light{
+	from{
+		opacity: 0;
+	}
+	60%{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes light{
+	from{
+		opacity: 0;
+	}
+	60%{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+
+/* page5 style */
+.page5 {position: relative; background: url(../images/5_bg.png) no-repeat 0 0 / 100% 100%;}
+.page5 .title{height: 0.58rem;background: url(../images/5_title.png) no-repeat 0 0 / 100% 100%;}
+.page5 .text{height: 0.34rem;background: url(../images/5_text.png) no-repeat 0 0 / 100% 100%;}
+.page5 .img{height: 3.87rem;background: url(../images/5_pic.png) no-repeat 0 0 / 100% 100%;}
+.page5 .leaves{position: absolute;top: 3.4rem;width: 100%;height: 4.92rem;background: url(../images/5_pic2.png) no-repeat 0 0 / 100% 100%;z-index: 10}
+
+/* page6 style */
+.page6 {position: relative; background: url(../images/6_bg.png) no-repeat 0 0 / 100% 100%;}
+.page6 .title{height: 0.52rem;background: url(../images/6_title.png) no-repeat 0 0 / 100% 100%;}
+.page6 .text{height: 0.88rem;background: url(../images/6_text.png) no-repeat 0 0 / 100% 100%;}
+.page6 .img{height: 4.81rem;background: url(../images/6_pic.png) no-repeat 0 0 / 100% 100%;}
+.page6 .right{position: absolute;top: 5.5rem;left: 2.3rem; width: 0.84rem;height: 0.6rem;background: url(../images/6_right.png) no-repeat 0 0 / 100% 100%;z-index: 10}
+.page6 .wrong{position: absolute;top: 5.5rem;right: 1.5rem;width: 0.84rem;height: 0.6rem;background: url(../images/6_wrong.png) no-repeat 0 0 / 100% 100%;z-index: 10}
+
+/* page7 style */
+.page7 {position: relative; background: #f4b147}
+.page7 .title{top: 1.2rem;height: 2.42rem;background: url(../images/7_title.png) no-repeat 0 0 / 100% 100%;}
+.page7 .qrcode{position: absolute;left: 50%;top: 4.3rem;margin-left: -1.365rem;width: 2.73rem;height: 2.73rem;}
+.page7 .follow{position: absolute;bottom: 2.2rem;width: 100%;font-size: 0.28rem;text-align: center;color: #B14320;font-weight: lighter}
+.page7 .logo{position: absolute;bottom: 0.2rem;height: auto;display: inline-block;font-size: 0}
+
